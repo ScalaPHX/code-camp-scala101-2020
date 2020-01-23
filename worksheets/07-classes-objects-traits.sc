@@ -12,17 +12,17 @@ object Person {
   def printFullName(fullNamed: FullName): Unit = println(s"${fullNamed.fullName}")
 }
 
-val walter = new Person(42, "Walter", "White")
+val elliot = new Person(24, "Elliot", "Alderson")
 
-println(s"${walter.fullName}")
+println(s"${elliot.fullName}")
 
-val jessie = Person(24, "Jessie", "Pinkman")
+val angela = Person(25, "Angela", "Moss")
 
-Person.printFullName(jessie)
+Person.printFullName(angela)
 
-val jessie2 = Person(24, "Jessie", "Pinkman")
+val angela2 = Person(25, "Angela", "Moss")
 
-jessie == jessie2
+angela == angela2
 
-//walter.age = 43
+//elliot.age = 43
 

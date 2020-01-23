@@ -11,13 +11,13 @@ futureAge.onComplete {
   case Failure(ex) => ex.printStackTrace()
 }
 
-val futureName = Future("Gustavo")
+val futureName = Future("Elliot")
 
 futureName.map("Name: " + _)
 
 val changeName: String => String = (name) => s"Name: $name"
 
-val futureAnotherName = Future("Walter")
+val futureAnotherName = Future("Angela")
 futureAnotherName.map(changeName).recover {
   case ex: Exception => s"Name Unknown due to error: ${ex.getMessage}"
 }

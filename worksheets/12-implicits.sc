@@ -1,5 +1,5 @@
-implicit val name = "Gus"
-val age = 55
+implicit val name = "Elliot"
+val age = 24
 
 def describe(age: Int)(implicit name: String) = s"$name is $age"
 
@@ -12,8 +12,8 @@ object Person {
 
 def describe(person: Person) = s"${person.firstName} is ${person.age.fold("Unknown")(a => a.toString)} years old."
 
-val gusApi = ApiPerson("Gustavo", "Fring")
-val walterPerson = Person(Option(42), "Walter", "White")
+val elliotApi = ApiPerson("Elliot", "Alderson")
+val angelaPerson = Person(Option(25), "Angela", "Moss")
 
-describe(gusApi)
-describe(walterPerson)
+describe(elliotApi)
+describe(angelaPerson)

@@ -1,4 +1,4 @@
-val names: Seq[String] = Seq("Walter", "Jessie", "Saul")
+val names: Seq[String] = Seq("Elliot", "Dom", "Angela")
 
 names(1)
 
@@ -8,9 +8,9 @@ names.tail
 
 names.foreach(println)
 
-names.find(_ == "Jessie")
+names.find(_ == "Dom")
 
-val quantities = List(23, 48, 12)
+val quantities = List(23, 35, 25)
 
 quantities.sum
 
@@ -22,6 +22,6 @@ val quantitiesWithName: Seq[(String, Int)] = names.zip(quantities)
 
 val quantityByNameMap = quantitiesWithName.toMap
 
-println(s"Walter's contribution: ${quantityByNameMap("Walter")}")
+println(s"Walter's contribution: ${quantityByNameMap("Angela")}")
 
-val ages: List[Int] = 24 :: 43 :: 54 :: Nil
+val ages: List[Int] = 24 :: 35 :: 25 :: Nil

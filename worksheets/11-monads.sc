@@ -1,4 +1,4 @@
-val maybeName = Option("Saul Goodman")
+val maybeName = Option("Elliot Alderson")
 
 maybeName.isDefined
 maybeName.isEmpty
@@ -15,12 +15,12 @@ val maybeUpdatedName = maybeName.map(name => Option(s"Name: $name"))
 
 maybeUpdatedName.flatten.getOrElse("No Name!")
 
-val maybeAnotherName = Option("Gus Fring")
+val maybeAnotherName = Option("Angela Moss")
 
 val maybeNames = for {
-  saul <- maybeName
-  gus <- maybeAnotherName
-} yield Seq(saul, gus)
+  elliot <- maybeName
+  angela <- maybeAnotherName
+} yield Seq(elliot, angela)
 
 
 
