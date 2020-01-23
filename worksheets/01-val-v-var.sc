@@ -1,6 +1,6 @@
-var name = "Walter"
+var name = "Elliot"
 
-name = "Walter White"
+name = "Elliot Alderson"
 
 println(name)
 
